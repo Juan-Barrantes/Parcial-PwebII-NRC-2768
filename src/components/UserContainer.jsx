@@ -4,7 +4,7 @@ import User from './User';
 const UserContainer = ({ users }) => {
     return (
         <div>
-            <table id="tabla-amortizacion" class="table">
+            <table id="tabla-amortizacion" className="table">
         
                     <tr style={{backgroundColor:'#7CFBD7'}}
                         id="saldoInicial" >
