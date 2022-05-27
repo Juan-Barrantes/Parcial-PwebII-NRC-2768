@@ -20,18 +20,18 @@ const UserContainer = ({ users }) => {
     console.log(allUsersIndex);
     return (
         <div>
-            <table id="tabla-amortizacion" className="table">
+            <table className="table table-striped">
                 <thead>
                     <tr style={{backgroundColor:'#7CFBD7'}}
                         id="saldoInicial" >
                     </tr>
                     <tr>
-                        <th>N°</th>
-                        <th>Nombre</th>
-                        <th>Apellido</th>
-                        <th>e-mail</th>
-                        <th>N° Celular</th>
-                        <th>foto</th>
+                        <th scope="col">N°</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Apellido</th>
+                        <th scope="col">e-mail</th>
+                        <th scope="col">N° Celular</th>
+                        <th scope="col">foto</th>
                     </tr>
                 </thead>
                 <tbody>
