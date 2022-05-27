@@ -3,9 +3,14 @@ import { useEffect, useState } from 'react';
 import Layout from './components/layout/Layout';
 import UserContainer from './components/UserContainer';
 import Loading from './components/Loading';
+//import ReactPaginate from 'react-paginate';
+
+
 
 function App() {
   const [users, setUsers] = useState(null);
+
+
 
   const fetchUsers = async () =>{
     
@@ -17,18 +22,15 @@ function App() {
     console.log(UsersJSON);
     
   }
-  
+
   useEffect(() => {
-    console.log("Inicializando users 😎");
+    console.log("Inicializando Users 😎");
     fetchUsers();
   }, []);
 
   useEffect(() => {
     console.log("Actualización users");
   }, [users]);
-
-  
-
 
   return (
     <div className="App">

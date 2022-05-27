@@ -8,7 +8,7 @@ export default function User({index,name,lastName, email,phone,photo}) {
       <td>{lastName}</td>
       <td>{email}</td>
       <td>{phone}</td>
-      <td><img src= {photo}/></td>
+      <td><img alt={name} className="rounded-circle" src= {photo}/></td>
     </tr>
     
     
